@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+		<link href="style.css" rel="stylesheet" />
+		<title>Онлайн-калькулятор с вложенными скобками и корнями</title>
+		<script src="script.js" defer></script>
+		<!-- <script src="js/calculator/app.js" defer></script> -->
+	</head>
+	<body class="orbitron-normal">
+	<!-- <body oncontextmenu="return false;"> -->
+		<div class="calc">
+			<h1  class="orbitron-bold">Калькулятор</h1>
+			<div id="ex"></div>
+			<div class="exBtn">
+				<a href="#" onclick="cancelLink()">Очистить историю <span>вычислений</span></a>
+			</div>
+			<input type="text" value="" id="input1" onpaste="return false;" />
+			<div id="percentin">
+				<input
+					type="text"
+					value=""
+					id="inputpercent"
+					onpaste="return false;"
+				/>% от
+				<input
+					type="text"
+					value=""
+					id="inputpercentfrom"
+					onpaste="return false;"
+				/>
+			</div>
+
+			<div class="wrapper">
+				<div class="operation">
+					<button id="plus">+</button>
+					<button id="minus">-</button><br>
+					<button id="mult">*</button>
+					<button id="div">/</button><br>
+					<button id="open-parenthesis">(</button>
+					<button id="close-parenthesis">)</button><br>
+					<button id="square-root">&radic;</button>
+					<button id="percent">%</button><br>
+					<button id="submit">=</button>
+				</div>
+
+				<div class="number">
+				
+				
+					<button id="seven">7</button>
+					<button id="eight">8</button>
+					<button id="nine">9</button><br>
+					<button id="four">4</button>
+					<button id="five">5</button>
+					<button id="six">6</button><br>
+					<button id="one">1</button>
+					<button id="two">2</button>
+					<button id="three">3</button><br>
+					<button id="zero">0</button>
+					<button id="point">.</button>
+					<button id="pi">π</button><br>
+					<button id="sign">+/-</button>
+					<button id="c">C</button>
+					<button id="back">&larr;</button>
+				</div>
+			</div>
+			<div class="round">
+				Округлять результат до
+				<select name="round" size="1" id="inputRound">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3" selected>3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+				знаков после запятой
+			</div>
+		</div>
+	</body>
+</html>
