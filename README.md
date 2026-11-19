@@ -15,4 +15,4 @@ A responsive calculator for evaluating mathematical expressions, including expre
 ## Screenshots
 
 ### Mobile
-![Mobile screenshot](img/calculator.webp)
+![Mobile screenshot](calculator.webp)
